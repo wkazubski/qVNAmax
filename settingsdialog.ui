@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>430</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>9</y>
+     <width>381</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="DeviceSpinBox">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="MaxFrequencyLabel">
+      <property name="text">
+       <string>Max Frequency</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="MinFrequencyLabel">
+      <property name="text">
+       <string>Min Fequency</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QDoubleSpinBox" name="DDSclockDoubleSpinBox">
+      <property name="decimals">
+       <number>6</number>
+      </property>
+      <property name="maximum">
+       <double>1500.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QDoubleSpinBox" name="MaxFrequencyDoubleSpinBox">
+      <property name="decimals">
+       <number>6</number>
+      </property>
+      <property name="maximum">
+       <double>500.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QDoubleSpinBox" name="MinFrequencyDoubleSpinBox">
+      <property name="decimals">
+       <number>6</number>
+      </property>
+      <property name="maximum">
+       <double>500.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="TransmitanceCheckBox">
+      <property name="text">
+       <string>Transmitance</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="TypeComboBox">
+      <item>
+       <property name="text">
+        <string>Serial / USB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VNA   180MHz (parallel port)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VNA2 400MHz (parallel port)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Test</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="TypeLabel">
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="PortLabel">
+      <property name="text">
+       <string>IO Addres</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="DDSclockLabel">
+      <property name="text">
+       <string>DDS clock</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QCheckBox" name="DRCheckBox">
+      <property name="text">
+       <string>40dB</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="SerialComboBox"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="SerialLabel">
+      <property name="text">
+       <string>Serial Device</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="PortComboBox">
+      <item>
+       <property name="text">
+        <string>0x278</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0x378</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0x3BC</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="DeviceLabel">
+      <property name="text">
+       <string>Device</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QDoubleSpinBox" name="TransmitanceOffsetDoubleSpinBox">
+      <property name="minimum">
+       <double>-60.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>60.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="TransmitanceOffsetLabel">
+      <property name="text">
+       <string>Transmitance Offset</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="ReflectanceOffsetLabel">
+      <property name="text">
+       <string>Reflectance Offset</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QDoubleSpinBox" name="ReflectanceOffsetDoubleSpinBox">
+      <property name="minimum">
+       <double>-30.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>30.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>381</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="Det1GainDoubleSpinBox">
+      <property name="decimals">
+       <number>4</number>
+      </property>
+      <property name="maximum">
+       <double>0.999000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.001000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.058600000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="DetectorsLabel">
+      <property name="text">
+       <string>Detectors</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="OffsetLabel">
+      <property name="text">
+       <string>Offset</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="DetectorsSpinBox">
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="GainLabel">
+      <property name="text">
+       <string>Gain</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDoubleSpinBox" name="Det3GainDoubleSpinBox">
+      <property name="decimals">
+       <number>4</number>
+      </property>
+      <property name="maximum">
+       <double>0.999900000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.001000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.058600000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="Det2GainDoubleSpinBox">
+      <property name="decimals">
+       <number>4</number>
+      </property>
+      <property name="maximum">
+       <double>0.999900000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.001000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.058600000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QDoubleSpinBox" name="Det1OffsetDoubleSpinBox">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QDoubleSpinBox" name="Det2OffsetDoubleSpinBox">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QDoubleSpinBox" name="Det3OffsetDoubleSpinBox">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

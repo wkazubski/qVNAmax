@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=qVNAmax
+GenericName=qVNAmax
+Comment=Software for antenna analyzers based on IW2HEV design
+Exec=qvnamax
+Terminal=false
+Type=Application
+Icon=qvnamax
+Categories=Electronics;Engineering;Science;
+

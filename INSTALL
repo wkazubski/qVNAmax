@@ -1,0 +1,43 @@
+Installation Instructions for the qVNAmax software
+------------------------------------------------
+
+1. Requirements
+
+ * Qt4, version 4.7.0 or greater,
+ * QtSerialPort library (for Qt4), http://qt-project.org/wiki/QtSerialPort,
+ * Qwt library, version 5.2.2, 6.0.1 or greater,
+ * C++ build environment (compiler, etc.).
+
+2. Basic installation
+
+> qmake qvnamax.pro
+> make
+> su
+> make install
+
+3. Qmake options
+
+    PREFIX=/usr
+
+      install into specified location (/usr)
+
+    CONFIG+=qwt-rmb"
+
+      add Marker 2 support by right mouse key click
+      (Qwt 6.0.1+, requires Qwt-rmb library)
+
+    CONFIG+=ad9851
+
+      add parallel port support for AD9851 based devices
+
+    CONFIG+=ad9951
+
+      add parallel port support for AD9951 based devices (not working yet)
+
+    CONFIG+=test
+
+      test input data
+
+    "CONFIG += ad9851 test"
+
+      add several options simulteneusly 

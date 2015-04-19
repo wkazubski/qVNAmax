@@ -1,0 +1,4 @@
+NEWS for qVNA
+
+- Support of mode 2 on Max6 (simultaneous measurementr of
+   reflectaance and transmitance)

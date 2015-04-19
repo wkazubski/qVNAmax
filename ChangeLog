@@ -1,0 +1,46 @@
+0.3.2 - 2014-11-29
+- "Configure" pushbutton renamed to "Colors" and connected to line colors/
+  width configuration dialog
+- bug fixes:
+ * fix building without qwt-rmb
+ * fixed crash when attempting to set device number greater than N_HW
+
+0.3.1 - 2014-08-04
+- fixes to mode switching logic
+
+0.3.0 - 2014-07-14
+- initial support for modes 2, 3, 4
+
+0.2.8 - 2014-05-04
+- widened range of Transmittance Offset needed for Max6
+- fixed errors in file save/load in 40dB mode
+
+0.2.7 - 2014-05-04
+- Zoom In and Zoom Out buttons, zooming part of the plot between cursors
+- small changes to serial driver
+
+0.2.6 - 2014-03-09
+- Right mouse support implemented by a separate library (Qwt-rmb).
+- Should work with both Qwt 6.0.1 and 6.1.0 if proper ersion of library
+  is used.
+
+0.2.5 - 2014-01-01
+- Marker 2 moved by right mouse key using code borrowed from Qwt 6.1.
+
+0.2.4 - 2013-10-12
+- first try to use right mouse key for Marker 2, mouse click state machine
+  borrowed from Qwt 6.0.1.
+
+0.2.3 - 2013-09-30
+- fixed build on Qwt 6.1
+
+0.2.2 - 2013-09-26
+- fixed icons in resource
+- fixed generator mode
+- fixed crash on disabled driver
+- polish translation updated
+- changelog added
+
+0.2.1 - 2013-09-12
+- first public release
+
