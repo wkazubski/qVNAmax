@@ -6,9 +6,15 @@ using namespace std;
 
 QT_USE_NAMESPACE_SERIALPORT
 
+#define MAXPOINTS 501
+#define TIMEOUT1 10
+#define TIMEOUT2 100
+
 QString device;
 SerialPort *serial;
 bool isOpen;
+QByteArray responseData;
+int readptr;
 
 VnaSerial::VnaSerial()
 {
@@ -34,7 +40,19 @@ void VnaSerial::initMeasure(unsigned int start, unsigned int step, int points, i
     SendParam(start);
     SendParam(points);
     SendParam(step);
-    serial->waitForBytesWritten(10);
+    if (serial->waitForBytesWritten(TIMEOUT1))
+    {
+        // read response
+        if (serial->waitForReadyRead(TIMEOUT2))
+        {
+            responseData = serial->readAll();
+            while (serial->waitForReadyRead(TIMEOUT1))
+            {
+                responseData += serial->readAll();
+            }
+        }
+        readptr = 0;
+    }
 }
 
 void VnaSerial::setFrequency(unsigned int n)
@@ -121,12 +139,8 @@ void VnaSerial::SendParam(unsigned int x)
 
 unsigned int VnaSerial::getTwoBytes()
 {
-    char a, b;
     quint8 aa, bb;
-    serial->getChar(&a);
-    serial->getChar(&b);
-    aa = a;
-    bb = b;
-//    cout << aa << ":" << bb << endl;
+    aa = responseData.at(readptr++);
+    bb = responseData.at(readptr++);
     return(aa + 256 * bb);
 }

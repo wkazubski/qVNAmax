@@ -1,9 +1,8 @@
-0.3.2 - 2014-11-29
-- "Configure" pushbutton renamed to "Colors" and connected to line colors/
-  width configuration dialog
-- bug fixes:
- * fix building without qwt-rmb
- * fixed crash when attempting to set device number greater than N_HW
+0.3.3 - 2015-08-09
+- modified serial/USB VNA read
+
+0.3.2 - 2014-11-20
+- fix building without qwt-rmb
 
 0.3.1 - 2014-08-04
 - fixes to mode switching logic
