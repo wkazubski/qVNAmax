@@ -230,9 +230,9 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_actionAbout_triggered()
 {
     QMessageBox::about ( this, tr("About qVNAmax"),
-    tr("This is qVNAmax v 0.3.2, the software to control \n"
+    tr("This is qVNAmax v 0.3.3, the software to control \n"
     "the IW2HEV antenna analyzer.\n\n"
-    "(C)2012-2014 Wojciech Kazubski <wk@ire.pw.edu.pl\n\n"
+    "(C)2012-2015 Wojciech Kazubski <wk@ire.pw.edu.pl\n\n"
     "Licensed under GNU GPL v3 " ));
 }
 

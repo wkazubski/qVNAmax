@@ -865,9 +865,6 @@
            <property name="text">
             <string>50om</string>
            </property>
-           <property name="checkable">
-            <bool>false</bool>
-           </property>
           </widget>
          </item>
          <item row="4" column="0">
@@ -929,7 +926,7 @@
      <x>0</x>
      <y>0</y>
      <width>960</width>
-     <height>26</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

@@ -1,5 +1,6 @@
 0.3.3 - 2015-08-09
 - modified serial/USB VNA read
+- Configure pushbutton renamed and working
 
 0.3.2 - 2014-11-20
 - fix building without qwt-rmb
