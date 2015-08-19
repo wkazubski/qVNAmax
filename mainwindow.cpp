@@ -46,6 +46,9 @@
 #include "qwt_picker_machine2.h"
 #endif
 
+#define VERSION "0.3.3"
+#define LASTYEAR "2015"
+
 #define SWRdefaultColor QColor::red()
 #define RLdefaultColor QColor::blue()
 #define ZdefaultColor QColor::darkCyan()
@@ -230,9 +233,13 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_actionAbout_triggered()
 {
     QMessageBox::about ( this, tr("About qVNAmax"),
-    tr("This is qVNAmax v 0.3.3, the software to control \n"
+    tr("This is qVNAmax v ") +
+    VERSION +
+    tr(", the software to control \n"
     "the IW2HEV antenna analyzer.\n\n"
-    "(C)2012-2015 Wojciech Kazubski <wk@ire.pw.edu.pl\n\n"
+    "(C)2012-") +
+    LASTYEAR +
+    tr(" Wojciech Kazubski <wk@ire.pw.edu.pl\n\n"
     "Licensed under GNU GPL v3 " ));
 }
 

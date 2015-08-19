@@ -121,7 +121,7 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="183"/>
-        <location filename="mainwindow.cpp" line="1498"/>
+        <location filename="mainwindow.cpp" line="1505"/>
         <source>Frequency</source>
         <translation>Częstotliwość</translation>
     </message>
@@ -167,7 +167,7 @@
     <message>
         <location filename="mainwindow.ui" line="436"/>
         <location filename="mainwindow.ui" line="824"/>
-        <location filename="mainwindow.cpp" line="844"/>
+        <location filename="mainwindow.cpp" line="851"/>
         <source>SWR</source>
         <translation>WFS</translation>
     </message>
@@ -187,7 +187,7 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="681"/>
-        <location filename="mainwindow.cpp" line="1505"/>
+        <location filename="mainwindow.cpp" line="1512"/>
         <source>Max Freq.</source>
         <translation>Cz. maks.</translation>
     </message>
@@ -218,25 +218,25 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="626"/>
-        <location filename="mainwindow.ui" line="876"/>
+        <location filename="mainwindow.ui" line="873"/>
         <source>Gain1</source>
         <translation>Wzm. 1</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="633"/>
-        <location filename="mainwindow.ui" line="883"/>
+        <location filename="mainwindow.ui" line="880"/>
         <source>Gain2</source>
         <translation>Wzm. 2</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="640"/>
-        <location filename="mainwindow.ui" line="890"/>
+        <location filename="mainwindow.ui" line="887"/>
         <source>Gain3</source>
         <translation>Wzm. 3</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="701"/>
-        <location filename="mainwindow.cpp" line="1043"/>
+        <location filename="mainwindow.cpp" line="1050"/>
         <source>RUN</source>
         <translation>START</translation>
     </message>
@@ -305,48 +305,48 @@
         <translation type="obsolete">Konfiguracja</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="915"/>
-        <location filename="mainwindow.ui" line="988"/>
+        <location filename="mainwindow.ui" line="912"/>
+        <location filename="mainwindow.ui" line="985"/>
         <source>Quit</source>
         <translation>Zakończ</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="937"/>
+        <location filename="mainwindow.ui" line="934"/>
         <source>File</source>
         <translation>Plik</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="952"/>
+        <location filename="mainwindow.ui" line="949"/>
         <source>Help</source>
         <translation>Pomoc</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="959"/>
+        <location filename="mainwindow.ui" line="956"/>
         <source>Settings</source>
         <translation>Ustawienia</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="972"/>
+        <location filename="mainwindow.ui" line="969"/>
         <source>Open</source>
         <translation>Otwórz</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="975"/>
+        <location filename="mainwindow.ui" line="972"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="980"/>
+        <location filename="mainwindow.ui" line="977"/>
         <source>Save</source>
         <translation>Zapisz</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="983"/>
+        <location filename="mainwindow.ui" line="980"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1006"/>
+        <location filename="mainwindow.ui" line="1003"/>
         <source>Hardware</source>
         <translation type="unfinished"></translation>
     </message>
@@ -355,18 +355,18 @@
         <translation type="obsolete">Zakończ</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="991"/>
+        <location filename="mainwindow.ui" line="988"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="996"/>
+        <location filename="mainwindow.ui" line="993"/>
         <source>About</source>
         <translation>Inormacje o qVNA</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1001"/>
-        <location filename="mainwindow.cpp" line="241"/>
+        <location filename="mainwindow.ui" line="998"/>
+        <location filename="mainwindow.cpp" line="248"/>
         <source>About Qt</source>
         <translation>Informacje o Qt</translation>
     </message>
@@ -375,43 +375,43 @@
         <translation type="obsolete">Ustawienia</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="901"/>
-        <location filename="mainwindow.ui" line="1011"/>
+        <location filename="mainwindow.ui" line="898"/>
+        <location filename="mainwindow.ui" line="1008"/>
         <source>Colors</source>
         <translation>Kolory</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1016"/>
+        <location filename="mainwindow.ui" line="1013"/>
         <source>Print</source>
         <translation>Drukuj</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1019"/>
+        <location filename="mainwindow.ui" line="1016"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1024"/>
+        <location filename="mainwindow.ui" line="1021"/>
         <source>Comment</source>
         <translation>Komentarz</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1029"/>
+        <location filename="mainwindow.ui" line="1026"/>
         <source>Import</source>
         <translation>Importuj</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1034"/>
+        <location filename="mainwindow.ui" line="1031"/>
         <source>Export</source>
         <translation>Exportuj</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1447"/>
+        <location filename="mainwindow.cpp" line="1454"/>
         <source>Return Loss [dB]</source>
         <translation>Tłumienie odbicia [dB]</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="192"/>
+        <location filename="mainwindow.cpp" line="195"/>
         <source> -- </source>
         <translation>--</translation>
     </message>
@@ -434,29 +434,29 @@ analizatorem anten VNA opracowanym przez IW2HEV.
 Rozpowszechniany na licencji GNU GPL v3</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="689"/>
+        <location filename="mainwindow.cpp" line="696"/>
         <source>Frequency [MHz]</source>
         <translation>Częstotliwość [MHz]</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="374"/>
         <location filename="mainwindow.ui" line="859"/>
-        <location filename="mainwindow.cpp" line="850"/>
+        <location filename="mainwindow.cpp" line="857"/>
         <source>Angle</source>
         <translation>Kąt</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="867"/>
+        <location filename="mainwindow.cpp" line="874"/>
         <source>Z, Rs, Xs</source>
         <translation>Z, Rs, Xs</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1004"/>
+        <location filename="mainwindow.cpp" line="1011"/>
         <source>STOP</source>
         <translation>STOP</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="977"/>
+        <location filename="mainwindow.cpp" line="984"/>
         <source>Connected to %1</source>
         <translation>Połączony z %1</translation>
     </message>
@@ -475,33 +475,33 @@ analizatorem anten VNA opracowanym przez IW2HEV.
 Rozpowszechniany na licencji GNU GPL v3</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="980"/>
         <location filename="mainwindow.cpp" line="987"/>
         <location filename="mainwindow.cpp" line="994"/>
+        <location filename="mainwindow.cpp" line="1001"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="981"/>
+        <location filename="mainwindow.cpp" line="988"/>
         <source>Can&apos;t configure port: %1,
 error code: %2</source>
         <translation>Nie można skonfigurować portu %1,
 kod błędu: %2</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="991"/>
+        <location filename="mainwindow.cpp" line="998"/>
         <source>Open error</source>
         <translation>Błąd otwarcia urządzenia</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="988"/>
+        <location filename="mainwindow.cpp" line="995"/>
         <source>Can&apos;t open port: %1,
 error code: %2</source>
         <translation>Nie można otworzyć portu %1,
 kod błędu: %2</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="232"/>
+        <location filename="mainwindow.cpp" line="235"/>
         <source>About qVNAmax</source>
         <translation>Inormacje o qVNAmax</translation>
     </message>
@@ -526,14 +526,13 @@ analizatorem anten VNA opracowanym przez IW2HEV.
 Rozpowszechniany na licencji GNU GPL v3</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="233"/>
         <source>This is qVNAmax v 0.3.2, the software to control 
 the IW2HEV antenna analyzer.
 
 (C)2012-2014 Wojciech Kazubski &lt;wk@ire.pw.edu.pl
 
 Licensed under GNU GPL v3 </source>
-        <translation>Program qVNA wersja 0.3.2 do sterowania  
+        <translation type="obsolete">Program qVNA wersja 0.3.2 do sterowania  
 analizatorem anten VNA opracowanym przez IW2HEV.
 
 (C)2012-2014 Wojciech Kazubski &lt;wk@ire.pw.edu.pl&gt;
@@ -541,100 +540,125 @@ analizatorem anten VNA opracowanym przez IW2HEV.
 Rozpowszechniany na licencji GNU GPL v3</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="984"/>
+        <location filename="mainwindow.cpp" line="236"/>
+        <source>This is qVNAmax v </source>
+        <translation>Program qVNA wersja</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="238"/>
+        <source>, the software to control 
+the IW2HEV antenna analyzer.
+
+(C)2012-</source>
+        <translation>do sterowania  
+analizatorem anten VNA opracowanym przez IW2HEV.
+
+(C)2012-</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="242"/>
+        <source> Wojciech Kazubski &lt;wk@ire.pw.edu.pl
+
+Licensed under GNU GPL v3 </source>
+        <translation> Wojciech Kazubski &lt;wk@ire.pw.edu.pl&gt;
+
+Rozpowszechniany na licencji GNU GPL v3</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="991"/>
         <source>Configure error</source>
         <translation>Błąd konfiguracji urządzenia</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="995"/>
+        <location filename="mainwindow.cpp" line="1002"/>
         <source>Driver not available: %1</source>
         <translation>Sterownik niedostępny: %1</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="997"/>
+        <location filename="mainwindow.cpp" line="1004"/>
         <source>Not available</source>
         <translation>Niedostępny</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1013"/>
+        <location filename="mainwindow.cpp" line="1020"/>
         <source>Generator on</source>
         <translation>Generator włączony</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1021"/>
+        <location filename="mainwindow.cpp" line="1028"/>
         <source>Running</source>
         <translation>Skanowanie włączone</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1033"/>
+        <location filename="mainwindow.cpp" line="1040"/>
         <source>Generator off</source>
         <translation>Generator wyłączony</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1038"/>
+        <location filename="mainwindow.cpp" line="1045"/>
         <source>Stopped</source>
         <translation>Zatrzymany</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1450"/>
+        <location filename="mainwindow.cpp" line="1457"/>
         <source>Gain [dB]</source>
         <translation>Wzmocnienie [dB]</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1453"/>
+        <location filename="mainwindow.cpp" line="1460"/>
         <source>Return Loss / Gain [dB]</source>
         <translation>Tłumienie odbicia / Wzmocnienie [dB]</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1577"/>
+        <location filename="mainwindow.cpp" line="1584"/>
         <source>Load Measurement Results</source>
         <translation>Wczytywanie wyników pomiaru</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1578"/>
-        <location filename="mainwindow.cpp" line="1985"/>
+        <location filename="mainwindow.cpp" line="1585"/>
+        <location filename="mainwindow.cpp" line="1992"/>
         <source>VNA Binary (*.vec);;Comma Separated (*.csv)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1597"/>
-        <location filename="mainwindow.cpp" line="1878"/>
-        <location filename="mainwindow.cpp" line="1997"/>
+        <location filename="mainwindow.cpp" line="1604"/>
+        <location filename="mainwindow.cpp" line="1885"/>
+        <location filename="mainwindow.cpp" line="2004"/>
         <source>Unable to open file</source>
         <translation>Nie można otworzyć pliku</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1786"/>
+        <location filename="mainwindow.cpp" line="1793"/>
         <source>Unable to read file</source>
         <translation>Nie można odczytać pliku</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1787"/>
+        <location filename="mainwindow.cpp" line="1794"/>
         <source>Not a VNA file</source>
         <translation>To nie jest plik VNA</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1868"/>
+        <location filename="mainwindow.cpp" line="1875"/>
         <source>Save Measurement Results</source>
         <translation>Zapisywanie wyników pomiaru</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1869"/>
+        <location filename="mainwindow.cpp" line="1876"/>
         <source>VNA Binary (*.vec)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="1984"/>
+        <location filename="mainwindow.cpp" line="1991"/>
         <source>Export Measurement Results</source>
         <translation>Eksport wyników pomiaru</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="2009"/>
+        <location filename="mainwindow.cpp" line="2016"/>
         <source>Problem exporting binary VEC file</source>
         <translation>Problem z eksportem binarnego pliku VEC</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="2010"/>
+        <location filename="mainwindow.cpp" line="2017"/>
         <source>Number of points is other than 501. The file probably will not load correctly by qVNAmax or another software.</source>
         <translation>Liczba punktów pomiarowych jest inna niż 501. Plik najprawdopodobniej nie będzie dał się wczytać przez qVNAmax lub inny program.</translation>
     </message>
