@@ -19,7 +19,9 @@
 #include <QFileInfo>
 #include <QSettings>
 #include <QTimer>
+#if QT_VERSION < 0x050000
 #include <QColorGroup>
+#endif
 #include <QPrinter>
 #include <QPrintDialog>
 #include <QTextStream>
@@ -1904,7 +1906,7 @@ void MainWindow::WriteFile()
         for (i=0;i<10;i++)
         {
             if (i < VNA_file_version.length())
-                version[i] = VNA_file_version.at(i).toAscii();
+                version[i] = VNA_file_version.at(i).toLatin1();
             else
                 version[i] = 0;
         }
@@ -1915,7 +1917,7 @@ void MainWindow::WriteFile()
         for (i=0;i<15;i++)
         {
             if (i < dateTimeString.length())
-                date[i] = dateTimeString.at(i).toAscii();
+                date[i] = dateTimeString.at(i).toLatin1();
             else
                 date[i] = 0;
         }
@@ -2068,10 +2070,10 @@ void MainWindow::on_actionExport_triggered()
             QTextStream out(&file);
 
             out << VNA_magic_number << ";";
-            out << '\"' << VNA_file_version.toAscii() << '\"' << ";";
+            out << '\"' << VNA_file_version.toLatin1() << '\"' << ";";
 
             QString dateTimeString = meas.time.toString("yyyyMMddhhmmss");
-            out << '\"' << dateTimeString.toAscii() << '\"' << ";";
+            out << '\"' << dateTimeString.toLatin1() << '\"' << ";";
             out << plotdata.freq[0] << ";";
             out << plotdata.freq[plotdata.points - 1] << ";";
             out << plotdata.points << ";";
@@ -2146,7 +2148,7 @@ void MainWindow::OnPickerPointSelected(const QwtDoublePoint & p)
 #endif
 {
     QPointF point = p;
-//    cout << QString("x: %1, y: %2").arg(point.x()).arg(point.y()).toAscii().data() << endl;
+//    cout << QString("x: %1, y: %2").arg(point.x()).arg(point.y()).toLatin1().data() << endl;
     if (marker1.enabled)
         ui->Marker1DoubleSpinBox->setValue(point.x());
 //    if (marker2.enabled)
@@ -2160,7 +2162,7 @@ void MainWindow::OnPicker2PointSelected(const QwtDoublePoint & p)
 #endif
 {
     QPointF point = p;
-//    cout << QString("x: %1, y: %2").arg(point.x()).arg(point.y()).toAscii().data() << endl;
+//    cout << QString("x: %1, y: %2").arg(point.x()).arg(point.y()).toLatin1().data() << endl;
     if (marker2.enabled)
         ui->Marker2DoubleSpinBox->setValue(point.x());
 }
