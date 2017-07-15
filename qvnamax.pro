@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport serialport
 
 TARGET = qvnamax
 TEMPLATE = app
@@ -55,11 +55,16 @@ test {
 
 qwt-rmb {
     DEFINES += HAVE_RMB
+    unix: LIBS += -lqwt-rmb
 }
 
-unix:CONFIG += qwt qtserialport
+greaterThan(QT_MAJOR_VERSION, 4) {
+unix:INCLUDEPATH += /usr/include/qwt
+unix:LIBS += -lqwt
+} else {
 unix:INCLUDEPATH += /usr/include/qwt /usr/include/QtAddOnSerialPort
-unix:LIBS += -lqwt -lSerialPort -lqwt-rmb
+unix:LIBS += -lqwt -lSerialPort
+}
 
 DISTFILES += qvnamax_pl.qm
 

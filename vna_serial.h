@@ -1,13 +1,21 @@
 #include "vna.h"
+#if QT_VERSION >= 0x050000
+#include <QSerialPort>
+#else
 #include <serialport.h>
 #include <serialport-global.h>
+#endif
 #include <QMainWindow>
 
+#if QT_VERSION < 0x050000
 QT_BEGIN_NAMESPACE_SERIALPORT
 class SerialPort;
 QT_END_NAMESPACE_SERIALPORT
 
 QT_USE_NAMESPACE_SERIALPORT
+#else
+QT_USE_NAMESPACE
+#endif
 
 class VnaSerial: public virtual Vna
 {

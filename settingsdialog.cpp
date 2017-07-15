@@ -1,12 +1,22 @@
 #include "mainwindow.h"
 #include "settingsdialog.h"
 #include "ui_settingsdialog.h"
+#if QT_VERSION >= 0x050000
+#include <QtSerialPort/QSerialPortInfo>
+#else
 #include <serialportinfo.h>
+#endif
 #include <iostream>
 
 using namespace std;
 
+#if QT_VERSION >= 0x050000
+QT_USE_NAMESPACE
+
+static const char blankString[] = QT_TRANSLATE_NOOP("SettingsDialog", "N/A");
+#else
 QT_USE_NAMESPACE_SERIALPORT
+#endif
 
 AnalyzerStruct SettingsDialog::analyzer[N_HW];
 AnalyzerStruct analyzer_new[N_HW];
@@ -216,11 +226,30 @@ int SettingsDialog::fillPortsInfo()
     i = 0;
     k = 0;
     ui->SerialComboBox->clear();
+#if QT_VERSION >= 0x050000
+    QString description;
+    QString manufacturer;
+    QString serialNumber;
+    const auto infos = QSerialPortInfo::availablePorts();
+    for (const QSerialPortInfo &info : infos) {
+        QStringList list;
+        description = info.description();
+        manufacturer = info.manufacturer();
+        serialNumber = info.serialNumber();
+        list << info.portName()
+             << (!description.isEmpty() ? description : blankString)
+             << (!manufacturer.isEmpty() ? manufacturer : blankString)
+             << (!serialNumber.isEmpty() ? serialNumber : blankString)
+             << info.systemLocation()
+             << (info.vendorIdentifier() ? QString::number(info.vendorIdentifier(), 16) : blankString)
+             << (info.productIdentifier() ? QString::number(info.productIdentifier(), 16) : blankString);
+#else
     foreach (const SerialPortInfo &info, SerialPortInfo::availablePorts()) {
         QStringList list;
         list << info.portName() << info.description()
              << info.manufacturer() << info.systemLocation()
              << info.vendorIdentifier() << info.productIdentifier();
+#endif
 
         ui->SerialComboBox->addItem(list.first(), list);
         if (info.portName() == analyzer_new[n].serialport)

@@ -4,21 +4,33 @@
 
 using namespace std;
 
+#if QT_VERSION >= 0x050000
+QT_USE_NAMESPACE
+#else
 QT_USE_NAMESPACE_SERIALPORT
+#endif
 
 #define MAXPOINTS 501
 #define TIMEOUT1 10
 #define TIMEOUT2 100
 
 QString device;
+#if QT_VERSION >= 0x050000
+QSerialPort *serial;
+#else
 SerialPort *serial;
+#endif
 bool isOpen;
 QByteArray responseData;
 int readptr;
 
 VnaSerial::VnaSerial()
 {
+#if QT_VERSION >= 0x050000
+    serial = new QSerialPort();
+#else
     serial = new SerialPort();
+#endif
     isOpen = false;
 }
 
@@ -91,17 +103,29 @@ int VnaSerial::openSerialPort()
 {
     int result = 0;
 //    cout << "setting " << device.toStdString() << endl;
+#if QT_VERSION >= 0x050000
+    serial->setPortName(device);
+#else
     serial->setPort(device);
+#endif
 //    cout << "set " << device.toStdString() << endl;
     if (serial->open(QIODevice::ReadWrite))
     {
 //        cout << "opened" << endl;
         isOpen = true;
+#if QT_VERSION >= 0x050000
+        if (serial->setBaudRate(QSerialPort::Baud115200)
+                && serial->setDataBits(QSerialPort::Data8)
+                && serial->setParity(QSerialPort::NoParity)
+                && serial->setStopBits(QSerialPort::OneStop)
+                && serial->setFlowControl(QSerialPort::NoFlowControl))
+#else
         if (serial->setRate(SerialPort::Rate115200)
                 && serial->setDataBits(SerialPort::Data8)
                 && serial->setParity(SerialPort::NoParity)
                 && serial->setStopBits(SerialPort::OneStop)
                 && serial->setFlowControl(SerialPort::NoFlowControl))
+#endif
         {
 //            cout << "OK" << endl;
         }
