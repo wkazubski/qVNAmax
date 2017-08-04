@@ -6,24 +6,51 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>960</width>
-    <height>720</height>
+    <width>950</width>
+    <height>700</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>550</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>qVNAmax</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>1</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>941</width>
-      <height>651</height>
+      <width>931</width>
+      <height>631</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
@@ -49,7 +76,7 @@
        <item>
         <widget class="QRadioButton" name="ImpedanceRadioButton">
          <property name="text">
-          <string>SWR/R.L./Impedance</string>
+          <string>SWR/R.L./&amp;Impedance</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">FunctionButtonGroup</string>
@@ -79,7 +106,7 @@
        <item>
         <widget class="QRadioButton" name="TR2RadioButton">
          <property name="text">
-          <string>Refl.+Tr.-2det.</string>
+          <string>Refl.+Tr.-&amp;2det.</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">FunctionButtonGroup</string>
@@ -89,7 +116,7 @@
        <item>
         <widget class="QRadioButton" name="TR3RadioButton">
          <property name="text">
-          <string>Refl.+Tr.-3det.</string>
+          <string>Refl.+Tr.-&amp;3det.</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">FunctionButtonGroup</string>
@@ -99,7 +126,7 @@
        <item>
         <widget class="QRadioButton" name="GeneratorRadioButton">
          <property name="text">
-          <string>Generator</string>
+          <string>&amp;Generator</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">FunctionButtonGroup</string>
@@ -125,32 +152,35 @@
       <widget class="QWidget" name="MainWidget" native="true">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
         </sizepolicy>
        </property>
        <widget class="QwtPlot" name="MainQwtPlot">
         <property name="geometry">
          <rect>
-          <x>1</x>
-          <y>1</y>
-          <width>931</width>
-          <height>381</height>
+          <x>0</x>
+          <y>0</y>
+          <width>930</width>
+          <height>340</height>
          </rect>
         </property>
         <property name="sizePolicy">
-         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>1</verstretch>
          </sizepolicy>
         </property>
        </widget>
       </widget>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
        <item>
         <layout class="QGridLayout" name="gridLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
          <item row="2" column="2">
           <widget class="QDoubleSpinBox" name="Marker2DoubleSpinBox">
            <property name="decimals">
@@ -222,6 +252,9 @@
        </item>
        <item>
         <layout class="QGridLayout" name="gridLayout_2">
+         <property name="spacing">
+          <number>3</number>
+         </property>
          <item row="1" column="9">
           <widget class="QDoubleSpinBox" name="M1G2DoubleSpinBox">
            <property name="buttonSymbols">
@@ -643,25 +676,15 @@
          </item>
         </layout>
        </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <layout class="QGridLayout" name="gridLayout_3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
          <item row="1" column="1">
           <widget class="QDoubleSpinBox" name="MinFrequencyDoubleSpinBox">
            <property name="decimals">
@@ -797,7 +820,7 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
+         <item row="1" column="0">
           <widget class="QCheckBox" name="FullRangeCheckBox">
            <property name="text">
             <string>Full range</string>
@@ -818,6 +841,9 @@
        </item>
        <item>
         <layout class="QGridLayout" name="gridLayout_4">
+         <property name="spacing">
+          <number>3</number>
+         </property>
          <item row="1" column="0">
           <widget class="QCheckBox" name="SWRcheckBox">
            <property name="text">
@@ -892,6 +918,9 @@
        </item>
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>3</number>
+         </property>
          <item>
           <widget class="QPushButton" name="LineConfigurePushButton">
            <property name="text">
@@ -925,13 +954,13 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>960</width>
-     <height>24</height>
+     <width>950</width>
+     <height>31</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>File</string>
+     <string>&amp;File</string>
     </property>
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
@@ -953,7 +982,7 @@
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
-     <string>Settings</string>
+     <string>&amp;Settings</string>
     </property>
     <addaction name="actionComment"/>
     <addaction name="actionSetup"/>
@@ -966,7 +995,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
    <property name="text">
-    <string>Open</string>
+    <string>&amp;Open</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -974,7 +1003,7 @@
   </action>
   <action name="actionSave">
    <property name="text">
-    <string>Save</string>
+    <string>&amp;Save</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
@@ -982,7 +1011,7 @@
   </action>
   <action name="actionExit">
    <property name="text">
-    <string>Quit</string>
+    <string>&amp;Quit</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
@@ -990,27 +1019,27 @@
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>About</string>
+    <string>&amp;About</string>
    </property>
   </action>
   <action name="actionAbout_Qt">
    <property name="text">
-    <string>About Qt</string>
+    <string>About &amp;Qt</string>
    </property>
   </action>
   <action name="actionSetup">
    <property name="text">
-    <string>Hardware</string>
+    <string>&amp;Hardware</string>
    </property>
   </action>
   <action name="actionColors">
    <property name="text">
-    <string>Colors</string>
+    <string>C&amp;olors</string>
    </property>
   </action>
   <action name="actionPrint">
    <property name="text">
-    <string>Print</string>
+    <string>&amp;Print</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+P</string>
@@ -1018,17 +1047,17 @@
   </action>
   <action name="actionComment">
    <property name="text">
-    <string>Comment</string>
+    <string>&amp;Comment</string>
    </property>
   </action>
   <action name="actionImport">
    <property name="text">
-    <string>Import</string>
+    <string>&amp;Import</string>
    </property>
   </action>
   <action name="actionExport">
    <property name="text">
-    <string>Export</string>
+    <string>&amp;Export</string>
    </property>
   </action>
  </widget>
