@@ -48,8 +48,8 @@
 #include "qwt_picker_machine2.h"
 #endif
 
-#define VERSION "0.3.3"
-#define LASTYEAR "2015"
+#define VERSION "0.3.4"
+#define LASTYEAR "2018"
 
 #define SWRdefaultColor QColor::red()
 #define RLdefaultColor QColor::blue()
